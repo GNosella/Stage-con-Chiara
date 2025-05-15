@@ -1,0 +1,28 @@
+{
+    "model_path": "/mnt/data/model_regression_odi_spine.pkl",
+    "input_features": {
+        "ODI_Total_PreOp": {
+            "type": "float",
+            "validation": "Valori continui"
+        },
+        "SF36_GeneralHealth_PreOp": {
+            "type": "float",
+            "validation": "Valori continui"
+        },
+        "Vas_Back_PreOp": {
+            "type": "float",
+            "validation": "Valori continui"
+        },
+        "anni_ricovero": {
+            "type": "float",
+            "validation": "Valori continui"
+        },
+        "sesso": {
+            "type": "bool",
+            "validation": "0 (Femminile) o 1 (Maschile)"
+        }
+    },
+    "output": [
+        "Valore stimato di ODI Score per la colonna vertebrale"
+    ]
+}

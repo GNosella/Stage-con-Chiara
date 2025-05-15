@@ -1,0 +1,28 @@
+{
+    "model_path": "/mnt/data/model_classification_odi_spine.pkl",
+    "input_features": {
+        "gender": {
+            "type": "string",
+            "validation": "Male o Female"
+        },
+        "ODI_Total_PreOp": {
+            "type": "float",
+            "validation": "Valori continui"
+        },
+        "classe_asa_1": {
+            "type": "int",
+            "validation": "Valori categorici (1, 2, 3, 4)"
+        },
+        "Vas_Back_PreOp": {
+            "type": "float",
+            "validation": "Valori continui"
+        },
+        "SF36_GeneralHealth_PreOp": {
+            "type": "float",
+            "validation": "Valori continui"
+        }
+    },
+    "output": [
+        "Classe ODI predetta per la colonna vertebrale"
+    ]
+}

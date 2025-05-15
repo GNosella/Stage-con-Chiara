@@ -1,0 +1,38 @@
+{
+    "url": "/data/analysis",
+    "method": "POST",
+    "features": [
+        "gender",
+        "SF12_ultimomeselimite_risp_0",
+        "SF12_PhysicalScore_PreOp",
+        "SF12_autovalsalute_risp_0",
+        "classe_asa"
+    ],
+
+    "model_path": "/mnt/data/model_classification_physical.pkl",
+    "input_features": {
+        "gender": {
+            "type": "string",
+            "validation": "Male o Female"
+        },
+        "SF12_ultimomeselimite_risp_0": {
+            "type": "int",
+            "validation": "Valori continui"
+        },
+        "SF12_PhysicalScore_PreOp": {
+            "type": "int",
+            "validation": "Valori continui"
+        },
+        "SF12_autovalsalute_risp_0": {
+            "type": "int",
+            "validation": "Valori continui"
+        },
+        "classe_asa": {
+            "type": "int",
+            "validation": "Valori categorici (1, 2, 3, 4)"
+        }
+    },
+    "output": [
+        "Classe di Physical Score predetta"
+    ]
+}

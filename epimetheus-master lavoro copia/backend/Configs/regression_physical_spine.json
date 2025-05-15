@@ -1,0 +1,28 @@
+{
+    "model_path": "/mnt/data/model_regression_physical_spine.pkl",
+    "input_features": {
+        "SF36_PhysicalFunctioning_PreOp": {
+            "type": "float",
+            "validation": "Valori continui"
+        },
+        "SF36_GeneralHealth_PreOp": {
+            "type": "float",
+            "validation": "Valori continui"
+        },
+        "anni_ricovero": {
+            "type": "float",
+            "validation": "Valori continui"
+        },
+        "ODI_Total_PreOp": {
+            "type": "float",
+            "validation": "Valori continui"
+        },
+        "classe_asa_1": {
+            "type": "int",
+            "validation": "Valori categorici (1, 2, 3, 4)"
+        }
+    },
+    "output": [
+        "Valore stimato di Physical Score per la colonna vertebrale"
+    ]
+}

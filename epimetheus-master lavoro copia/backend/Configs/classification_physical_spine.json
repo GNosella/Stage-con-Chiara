@@ -1,0 +1,28 @@
+{
+    "model_path": "/mnt/data/model_classification_physical_spine.pkl",
+    "input_features": {
+        "gender": {
+            "type": "string",
+            "validation": "Male o Female"
+        },
+        "SF36_EmotionalWellBeing_PreOp": {
+            "type": "float",
+            "validation": "Valori continui"
+        },
+        "SF36_PhysicalScore_PreOp": {
+            "type": "float",
+            "validation": "Valori continui"
+        },
+        "SF36_MentalScore_PreOp": {
+            "type": "float",
+            "validation": "Valori continui"
+        },
+        "classe_asa_1": {
+            "type": "int",
+            "validation": "Valori categorici (1, 2, 3, 4)"
+        }
+    },
+    "output": [
+        "Classe di Physical Score predetta per la colonna vertebrale"
+    ]
+}

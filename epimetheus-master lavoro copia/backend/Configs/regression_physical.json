@@ -1,0 +1,28 @@
+{
+    "model_path": "/mnt/data/model_regression_physical.pkl",
+    "input_features": {
+        "anni_ricovero": {
+            "type": "float",
+            "validation": "Valori continui"
+        },
+        "SF12_PhysicalScore_PreOp": {
+            "type": "float",
+            "validation": "Valori continui"
+        },
+        "SF12_MentalScore_PreOp": {
+            "type": "float",
+            "validation": "Valori continui"
+        },
+        "BMI_altezza_PreOp": {
+            "type": "float",
+            "validation": "Valori continui"
+        },
+        "BMI_peso_PreOp": {
+            "type": "float",
+            "validation": "Valori continui"
+        }
+    },
+    "output": [
+        "Valore stimato di Physical Score"
+    ]
+}

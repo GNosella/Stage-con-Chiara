@@ -1,0 +1,28 @@
+{
+    "model_path": "/mnt/data/model_classification_physical.pkl",
+    "input_features": {
+        "gender": {
+            "type": "string",
+            "validation": "Male o Female"
+        },
+        "SF12_ultimomeselimite_risp_@": {
+            "type": "float",
+            "validation": "Valori continui"
+        },
+        "SF12_PhysicalScore_PreOp": {
+            "type": "float",
+            "validation": "Valori continui"
+        },
+        "SF12_autovalsalute_risp_6": {
+            "type": "float",
+            "validation": "Valori continui"
+        },
+        "classe_asa_1": {
+            "type": "int",
+            "validation": "Valori categorici (1, 2, 3)"
+        }
+    },
+    "output": [
+        "Classe di Physical Score predetta"
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "model_path": "/mnt/data/model_classification_mental.pkl",
+    "input_features": {
+        "gender": {
+            "type": "string",
+            "validation": "Male o Female"
+        },
+        "SF12_MentalScore_PreOp": {
+            "type": "float",
+            "validation": "Valori continui"
+        },
+        "SF12_ultimomeseresa_risp_6": {
+            "type": "float",
+            "validation": "Valori continui"
+        },
+        "SF12_ultimomeselimite_risp_0": {
+            "type": "float",
+            "validation": "Valori continui"
+        },
+        "SF12_ultimomesetriste_risp_0": {
+            "type": "float",
+            "validation": "Valori continui"
+        }
+    },
+    "output": [
+        "Classe di Mental Score predetta"
+    ]
+}

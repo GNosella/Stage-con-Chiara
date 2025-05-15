@@ -1,0 +1,130 @@
+:root {
+  --darker-color: #005c9d;
+  --primary-color: #018abe;
+  --secondary-color: #5ab3d5;
+  --light-color: #e2f3fb;
+  --black-color: #212529;
+  --white-color: #f3f7fb;
+  --secondary-gray: #bbbbbb;
+  --grad-mig: #2cb7ea;
+  --grad-inv: #A9B0B1;
+  --grad-peg: #c02026;
+  --light-gray: #f8f9fa;
+
+  --bs-primary: #018abe;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--black-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+.nav-tabs .nav-link {
+  color: var(--black-color);
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: var(--primary-color);
+  font-weight: 500;
+  border: none;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--primary-color);
+  --bs-btn-border-color: var(--primary-color);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--primary-color);
+  --bs-btn-hover-border-color: var(--primary-color);
+  --bs-btn-focus-shadow-rgb: var(--primary-color);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--primary-color);
+  --bs-btn-active-border-color: var(--primary-color);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: var(--primary-color);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--primary-color);
+  --bs-gradient: none;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--primary-color);
+  --bs-btn-border-color: var(--primary-color);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--primary-color);
+  --bs-btn-hover-border-color: var(--primary-color);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--primary-color);
+  --bs-btn-active-border-color: var(--primary-color);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--primary-color);
+  --bs-btn-disabled-border-color: var(--primary-color);
+}
+
+.btn:hover {
+  color: white;
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.modal-content {
+  background-color: var(--light-gray);
+}
+
+.border {
+  border: 2px solid var(--secondary-color) !important;
+  border-radius: 20px;
+}
+
+.primaryColor {
+  color: var(--primary-color);
+}
+
+.form-bg {
+  background-color: var(--light-gray);
+  margin-top: 50px;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.text-danger {
+  color: red;
+}
+
+.invalid-field .form-control {
+  border: 1px solid #c02026 !important;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.patient-data-form {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+}

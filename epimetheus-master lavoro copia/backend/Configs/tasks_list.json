@@ -1,0 +1,15 @@
+{
+    "classification": [
+        "classification_physical",
+        "classification_mental",
+        "classification_physical_spine",
+        "classification_odi_spine"
+
+    ],
+    "regression": [
+        "regression_physical",
+        "regression_mental",
+        "regression_physical_spine",
+        "regression_odi_spine"
+    ]
+}
