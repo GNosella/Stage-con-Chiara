@@ -1,4 +1,8 @@
-{
+{    
+    "url": "/data/analysis",
+    "method": "POST",
+    "features": ["gender", "SF36_EmotionalWellBeing_PreO", "SF36_PhysicalScore_PreOp", "SF36_MentalScore_PreOp", "classe_asa_1" ],
+
     "model_path": "/mnt/data/model_classification_physical_spine.pkl",
     "input_features": {
         "gender": {

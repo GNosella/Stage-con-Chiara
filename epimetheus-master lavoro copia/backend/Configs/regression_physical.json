@@ -1,4 +1,8 @@
 {
+    "url": "/data/analysis",
+    "method": "POST",
+    "features": ["anni_ricovero", "SF12_PhysicalScore_PreOp", "SF12_MentalScore_PreO", "BMI_altezza_PreOp", "BMI_peso_PreOp"],
+
     "model_path": "/mnt/data/model_regression_physical.pkl",
     "input_features": {
         "anni_ricovero": {

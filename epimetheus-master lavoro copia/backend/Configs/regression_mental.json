@@ -1,4 +1,8 @@
-{
+{    
+    "url": "/data/analysis",
+    "method": "POST",
+    "features": ["SF12_PhysicalScore_PreOp", "SF12_MentalScore_PreOp", "BMI_altezza_PreOp", "BMI_peso_PreOp", "SF12_ultimomesetriste_risp_0"],
+
     "model_path": "/mnt/data/model_regression_mental.pkl",
     "input_features": {
         "SF12_PhysicalScore_PreOp": {

@@ -1,4 +1,8 @@
-{
+{   
+    "url": "/data/analysis",
+    "method": "POST",
+    "features": ["ODI_Total_PreOp", "SF36_GeneralHealth_PreOp", "Vas_Back_PreOp", "anni_ricovero", "sesso"],
+
     "model_path": "/mnt/data/model_regression_odi_spine.pkl",
     "input_features": {
         "ODI_Total_PreOp": {

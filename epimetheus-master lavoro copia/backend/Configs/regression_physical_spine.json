@@ -1,4 +1,8 @@
 {
+    "url": "/data/analysis",
+    "method": "POST",
+    "features": ["SF36_PhysicalFunctioning_PreOp", "SF36_GeneralHealth_PreOp", "anni_ricovero", "ODI_Total_PreOp", "classe_asa_1"],
+
     "model_path": "/mnt/data/model_regression_physical_spine.pkl",
     "input_features": {
         "SF36_PhysicalFunctioning_PreOp": {

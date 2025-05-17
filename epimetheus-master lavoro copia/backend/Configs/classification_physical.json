@@ -1,4 +1,8 @@
-{
+{   
+    "url": "/data/analysis",
+    "method": "POST",
+    "features": ["gender", "SF12_ultimomeselimite_risp_@", "SF12_PhysicalScore_PreOp", "SF12_autovalsalute_risp_6", "classe_asa_1"],
+
     "model_path": "/mnt/data/model_classification_physical.pkl",
     "input_features": {
         "gender": {

@@ -1,4 +1,8 @@
 {
+  "url": "/data/analysis",
+  "method": "POST",
+  "features": ["gender", "SF12_MentalScore_PreOp", "SF12_ultimomeseresa_risp_6", "SF12_ultimomeselimite_risp_0", "SF12_ultimomesetriste_risp_0" ],
+
     "model_path": "/mnt/data/model_classification_mental.pkl",
     "input_features": {
         "gender": {

@@ -45,7 +45,7 @@ const Results = () => {
     : null;
 
 
-  // nel caso in cui scorevalue sia stato letto dal local storage pulisco il dato dalle virgolette
+  
   useEffect(() => {
     if (scoreValue) {
       setScoreValue(scoreValue.replace(/"/g, ""));
@@ -73,7 +73,7 @@ const Results = () => {
       setFirstSelectOfEditableParameters(array[5]);
       setSecondSelectOfEditableParameters(array[15]);
     }
-  }, [data]);
+  }, [data, scoreValue]);
   
 
   // passo 2: dopo aver ottenuto l'array di dimensioni variabili calcolo l'oggetto paziente che mi servirà per visualizzare i grafici 
@@ -109,9 +109,9 @@ const Results = () => {
   }, [
     firstSelectOfEditableParameters,
     secondSelectOfEditableParameters,
-    // data,
+    data,
     valuesToChangeVisualization,
-    // scoreValue,
+    scoreValue,
   ]);
 
 

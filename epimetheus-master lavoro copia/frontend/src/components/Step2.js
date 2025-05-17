@@ -20,7 +20,7 @@ const Step2 = ({ onComplete }) => {
     setScoreValue(wizardFormData.score);
     setSelectedDataSource(wizardFormData.dataSource);
     localStorage.setItem("scoreValue", JSON.stringify(wizardFormData.score));
-  }, [wizardFormData.score, wizardFormData.dataSource]);
+  }, [wizardFormData.score, wizardFormData.dataSource, setScoreValue]);
 
   const handleSelectedScore = (score) => {
     setSelectedScore(score.target.value === "Physical" ? 0 : 1);

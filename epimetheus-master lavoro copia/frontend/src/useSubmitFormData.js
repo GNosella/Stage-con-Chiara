@@ -8,7 +8,7 @@ const useSubmitFormData = (scoreType, form) => {
   const [listOfAPIErrors, setListOfAPIErrors] = useState([]);
 
   useEffect(() => {
-    if (scoreType !== "") {
+      if (scoreType && scoreType.trim() !== "" && form && Object.keys(form).length > 0) {
       (async () => {
         setIsError(false);
         setIsLoading(true);
@@ -17,7 +17,7 @@ const useSubmitFormData = (scoreType, form) => {
           const configRes = await fetch(`/Configs/${scoreType}.json`);
           const config = await configRes.json();
 
-          const backendUrl = config.url;           // es. /data/analysis
+          const backendUrl = config.url;           
           const method = config.method || "POST";  // default POST
           const features = config.features || [];  // array di feature da usare
 
@@ -36,6 +36,7 @@ const useSubmitFormData = (scoreType, form) => {
             data: payload,
           });
 
+          
           setData(response.data);
           setIsLoading(false);
           localStorage.setItem('visualizationResponse', JSON.stringify(response.data));
@@ -51,7 +52,7 @@ const useSubmitFormData = (scoreType, form) => {
         }
       })();
     }
-  }, [scoreType]);
+  }, [scoreType, form]);
 
   return { isLoading, data, isError, listOfAPIErrors };
 };
